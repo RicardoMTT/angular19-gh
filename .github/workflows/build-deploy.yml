@@ -35,4 +35,4 @@ jobs:
 
       - name: Deploy
         if: success()
-        run: aws s3 sync ./dist/prueba-gh-angular19/browser s3://aws-gh-angular
+        run: aws s3 sync ./dist/prueba-gh-angular19/browser s3://angular19-gh
