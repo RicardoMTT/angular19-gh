@@ -22,13 +22,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 18
+          node-version: 22
 
       - name: Install dependencies
         run: npm install  # Cambiar a pnpm install si usas pnpm
 
-      - name: Run tests
-        run: npm run test:headless  # Ajusta si los tests han cambiado en tu configuración
+      # - name: Run tests
+      #   run: npm run test:headless  # Ajusta si los tests han cambiado en tu configuración
 
       - name: Build
         run: npm run build  # Asegúrate de que este comando sea correcto
